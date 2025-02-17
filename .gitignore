@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyre
+*.venv/
+venv/
+env/
+ENV/
+.env
+.env.local
+.flaskenv
+*.sqlite
+*.db
+
+# Node.js/React
+node_modules/
+dist/
+dist-ssr/
+*.local
+.cache/
+.temp/
+.DS_Store
+Thumbs.db
+
+# Vite
+*.log
+logs/
+
+# ComfyUI specific
+ComfyUI/models/
+ComfyUI/input/
+ComfyUI/output/
+ComfyUI/.cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Virtual environment
+.env/
+.env.production
+.env.development
+
+# Local development
+*.egg-info/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+*.manifest
+*.spec
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
