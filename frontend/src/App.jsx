@@ -14,6 +14,7 @@ function App() {
       setIsLoading(true)
       const response = await axios.post('http://localhost:5000/generate', { prompt })
       const { imageUrl } = response.data
+      console.log('Final image URL:', `http://localhost:5000/outputs/${imageUrl}`)
       setImageUrl(`http://localhost:5000/outputs/${imageUrl}`)
     } catch (err) {
       setError(err.response?.data?.error || 'Failed to generate image')
@@ -85,7 +86,11 @@ function App() {
               </div>
             </div>
           )}
+          
         </div>
+        <footer className="text-center text-gray-500 text-sm">
+          <p>Powered by AI • Create responsibly</p>
+        </footer>
       </div>
     </div>
   )

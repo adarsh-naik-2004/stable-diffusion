@@ -8,7 +8,8 @@ app = Flask(__name__)
 CORS(app)
 
 COMFYUI_URL = "http://127.0.0.1:8188/prompt"
-OUTPUT_FOLDER = os.path.join(os.getcwd(), 'ComfyUI', 'output')
+OUTPUT_FOLDER = r"C:\Users\adars\OneDrive\Desktop\image_generation\ComfyUI\output"
+
 
 @app.route('/')
 def home():
@@ -65,7 +66,7 @@ def generate_image():
         },
         "6": {
             "inputs": {
-                "filename_prefix": "generated_image",
+                "filename_prefix": "image",
                 "images": ["5", 0]  # output = index 0
             },
             "class_type": "SaveImage"
